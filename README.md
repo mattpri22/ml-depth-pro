@@ -2,7 +2,9 @@
 
 A computer vision system that calculates distances to road objects (vehicles, pedestrians, cyclists) in real-time using monocular depth estimation and object detection. Built for driving safety applications.
 
-![Demo](annotated_videos/demo.gif)
+<p align="center">
+  <img src="assets/demo.gif" alt="Demo" width="800"/>
+</p>
 
 ## Overview
 
@@ -83,7 +85,7 @@ source get_pretrained_models.sh
 # Downloads checkpoint to ./checkpoints/depth_pro.pt
 ```
 
-## 🔨 Usage
+## Usage
 
 ### Basic Camera Usage
 
@@ -139,7 +141,7 @@ python main.py --video videos/driving.mp4 --output annotated_videos/driving_anal
 ```
 road-object-distance-estimation/
 ├── src/
-│   ├── depth_pro/                 # ML-Depth-Pro model code
+│   ├── depth_pro/                # ML-Depth-Pro model code
 │   └── scripts/
 │       ├── depth_estimator.py    # Depth estimation wrapper
 │       └── yolo_detect.py        # YOLO detection + tracking
